@@ -1,6 +1,6 @@
 <% @doctor.appointments.each do |app| %>
 
-  <%= app.appointment_datetime.to_formatted_s(:long)  %>
+  <%= app.appointment_datetime.strftime("%B %d, %Y at %H:%M")  %>
 
 
 
