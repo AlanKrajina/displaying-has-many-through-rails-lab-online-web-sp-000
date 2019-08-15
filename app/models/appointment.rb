@@ -1,1 +1,2 @@
 class Appointment < ApplicationRecord
+end
