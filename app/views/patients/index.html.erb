@@ -1,10 +1,10 @@
 
 
 <ul>
-<% @patients.each do |app| %>
+<% @patients.each do |pat| %>
 
 
-<li> Name: <%= link_to app.name, patient_path(app.patient) %> Number of Appointments: </li>
+<li> Name: <%= link_to pat.name, pat_path(pat) %> Number of Appointments: </li>
 
 
 
