@@ -1,13 +1,12 @@
 <% @doctor.appointments.each do |app| %>
-<%= binding.pry %>
 
   <%= app.appointment_datetime.to_formatted_s(:long)  %>
 
-  <%= link_to app.appointment_datetime, user_path(comment.user) %>
-
-<% end %>
 
 
+  <%= link_to app.patient.name, patient_path(app.patient) %>
+
+  <% end %>
 
 # doctors #show page shows all of a doctor's appointment time
 # doctors #show page links to the patient's show page by name
