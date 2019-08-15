@@ -1,4 +1,6 @@
 <% @doctor.appointments.each do |app| %>
+<%= binding.pry %>
+
   <%= link_to app.appointment_datetime, user_path(comment.user) %> said
   <%= comment.content %>
 <% end %>
