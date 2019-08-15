@@ -1,13 +1,20 @@
+
+
 <ul>
 <% @patients.each do |app| %>
-<%= binding.pry %>
 
-<li> Name: <%= app.name  %> Number of Appointments: </li>
+
+<li> Name: <%= link_to app.name, patient_path(app.patient) %> Number of Appointments: </li>
+
 
 
 <% end %>
 
 </ul>
+
+
+
+
 1) patients #index page lists all of the patients and the number of appointments they have
    Failure/Error:
      within("ul") do
