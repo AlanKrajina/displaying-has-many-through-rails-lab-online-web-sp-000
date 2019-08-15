@@ -1,4 +1,4 @@
-<% @doctor.comments.each do |comment| %>
-  <%= link_to comment.user.username, user_path(comment.user) %> said
+<% @doctor.appointments.each do |app| %>
+  <%= link_to app.appointment_datetime, user_path(comment.user) %> said
   <%= comment.content %>
 <% end %>
