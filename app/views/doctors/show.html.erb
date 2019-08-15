@@ -1,7 +1,7 @@
 <% @doctor.appointments.each do |app| %>
 <%= binding.pry %>
 
-  <%= app.appointment_datetime %>
+  <%= app.appointment_datetime.to_formatted_s(:long)  %>
 
   <%= link_to app.appointment_datetime, user_path(comment.user) %>
 
