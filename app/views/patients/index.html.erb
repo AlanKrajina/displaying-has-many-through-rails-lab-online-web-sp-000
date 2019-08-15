@@ -1,5 +1,5 @@
 <ul>
-<% @patient.appointments.each do |app| %>
+<% @patients.appointments.each do |app| %>
 <%= binding.pry %>
 
 <li>  <%= app.appointment_datetime.strftime("%B %d, %Y at %H:%M")  %></li>
