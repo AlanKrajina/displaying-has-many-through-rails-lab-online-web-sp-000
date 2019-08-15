@@ -2,9 +2,8 @@
 <% @patients.each do |app| %>
 <%= binding.pry %>
 
-<li>  <%= app.appointment_datetime.strftime("%B %d, %Y at %H:%M")  %></li>
+<li> Name: <%= app.name  %> Number of Appointments: </li>
 
-  <%= link_to app.doctor.name, doctor_path(app.doctor) %>
 
 <% end %>
 
